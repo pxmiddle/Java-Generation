@@ -13,9 +13,9 @@ public class Exercicio6 {
 		do {
 			System.out.println("Insira o número: ");
 			num = sc.nextInt();
-
+			if(num != 0 && num %3 == 0) { 
 			total += num;
-			i++;
+			i++;}
 		} while (num != 0);
 		media = total / i;
 		System.out.println("media: " + media);

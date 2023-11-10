@@ -14,7 +14,7 @@ public class Exercicio3 {
 			System.out.println("Digite sua idade: ");
 			idade = sc.nextInt();
 
-			if (idade < 21 && idade > 0) {
+			if (idade < 21 && idade >= 0) {
 				idadeMen++;
 			}
 			if (idade > 50) {
