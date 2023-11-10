@@ -38,7 +38,7 @@ public class Exercicio4 {
 			}
 
 			// Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos:
-			if ((genero == 3 && idade > 29)) {
+			if ((genero == 3 && idade < 30 && dev == 4)) {
 				genBin30++;
 			}
 
@@ -55,7 +55,7 @@ public class Exercicio4 {
 		System.out.println("Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: " + genIdadeCont);
 		System.out.println("Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos: " + genBin30);
 		System.out.println("O número total de pessoas que responderam à pesquisa: " + total);
-		System.out.println("A média de idade das pessoas que responderam à pesquisa: " + media);
+		System.out.printf("A média de idade das pessoas que responderam à pesquisa: %.2f", media);
 
 	}
 
