@@ -19,7 +19,6 @@ public class Exercicio1 {
 			if (procurar == vetor[i]) {
 				find = true;
 				System.out.printf("O número %d está localizado na posição: %d", procurar, i);
-				break;
 			}
 		}
 		if(!find) {

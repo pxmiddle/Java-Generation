@@ -35,8 +35,8 @@ public class Exercicio3 {
 
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz.length; j++) {
-				if (j == (matriz.length - col)) { // EDITAR ISSO AQ
-					System.out.print(matriz[i][j] + " ");
+				if (j == (matriz.length - col)) {
+					System.out.println(matriz[i][j]);
 					diagS += matriz[i][j];
 				}
 			}

@@ -15,6 +15,7 @@ public class Exercicio2 {
 			System.out.println("Insira o numero: ");
 			vetor[i] = sc.nextInt();
 			soma += vetor[i];
+
 		}
 
 		System.out.println("Elementos nos índices ímpares:");
