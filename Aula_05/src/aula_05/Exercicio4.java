@@ -6,8 +6,8 @@ public class Exercicio4 {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		double[][] notas = new double[2][4];
-		double vetorMedia[] = new double[2];
+		double[][] notas = new double[10][4];
+		double vetorMedia[] = new double[10];
 		double soma = 0;
 
 		for (int i = 0; i < notas.length; i++) {
