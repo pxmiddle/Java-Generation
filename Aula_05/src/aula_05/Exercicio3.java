@@ -8,6 +8,7 @@ public class Exercicio3 {
 	public static void main(String[] args) {
 		int[][] matriz = new int[3][3];
 		int diagP = 0, diagS = 0, col = 1;
+		String diagSS = "";
 
 		System.out.println("\n");
 		for (int i = 0; i < matriz.length; i++) {
@@ -34,18 +35,14 @@ public class Exercicio3 {
 		System.out.println("\n");
 
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				if (j == (matriz.length - col)) {
-					System.out.println(matriz[i][j]);
-					diagS += matriz[i][j];
-				}
+			diagSS += matriz[i][matriz.length - 1 - i] + " ";
+			diagS +=matriz[i][i];
 			}
-			col += 1;
-		}
-
+		System.out.println(diagSS);
 		System.out.println("\nSoma dos Elementos da Diagonal Principal: " + diagP);
 		System.out.println("Soma dos Elementos da Diagonal Secundária: " + diagS);
+		}
+
+		
 
 	}
-
-}
