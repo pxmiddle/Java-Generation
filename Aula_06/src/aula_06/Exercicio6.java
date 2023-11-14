@@ -10,27 +10,29 @@ public class Exercicio6 {
 
 		Stack<String> livros = new Stack<String>();
 		int opcao = 1;
-		String nome;
+		String nome = "";
 		System.out.println("*******************");
 		System.out.println(
 				"\n1-  Adicionar Livro na pilha.\n2- Listar todos os livros\n3- Retirar livro da pilha\n0- Sair");
 		System.out.println("\n*******************");
 
-		while (opcao != 0) {
+		while (opcao !=0) {
 			System.out.println("Entre com a opção desejada: ");
 			opcao = sc.nextInt();
+			sc.nextLine();
 			switch (opcao) {
+
 			case 1:
-				System.out.println("Digite o nome: ");
-				nome = sc.next();
+				System.out.println("Insira seu nome: ");
+				nome = sc.nextLine();
 				livros.push(nome);
 				break;
 			case 2:
-				System.out.println("Lista de Livros na Pilha: ");
+				System.out.println("Lista de clientes: ");
 				System.out.println(livros);
 				break;
 			case 3:
-				System.out.println("Um Livro foi retirado da pilha!");
+				System.out.println("O Cliente foi Chamado!");
 				livros.pop();
 				break;
 			case 0:

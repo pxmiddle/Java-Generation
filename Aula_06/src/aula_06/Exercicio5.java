@@ -19,11 +19,12 @@ public class Exercicio5 {
 		while (opcao !=0) {
 			System.out.println("Entre com a opção desejada: ");
 			opcao = sc.nextInt();
+			sc.nextLine();
 			switch (opcao) {
 
 			case 1:
 				System.out.println("Insira seu nome: ");
-				nome = sc.next();
+				nome = sc.nextLine();
 				fila.add(nome);
 				break;
 			case 2:
