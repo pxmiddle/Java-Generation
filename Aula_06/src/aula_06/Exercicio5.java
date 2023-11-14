@@ -11,12 +11,13 @@ public class Exercicio5 {
 		int opcao = 1;
 		String nome;
 
-		System.out.println("*******************");
-		System.out.println(
-				"\n1- Adicionar Clientes na Fila\n2- Listar todos os Clientes\n3- Retirar Clientes da fila\n0- Sair");
-		System.out.println("\n*******************");
+
 
 		while (opcao !=0) {
+			System.out.println("*******************");
+			System.out.println(
+					"\n1- Adicionar Clientes na Fila\n2- Listar todos os Clientes\n3- Retirar Clientes da fila\n0- Sair");
+			System.out.println("\n*******************");
 			System.out.println("Entre com a opção desejada: ");
 			opcao = sc.nextInt();
 			sc.nextLine();
@@ -28,8 +29,11 @@ public class Exercicio5 {
 				fila.add(nome);
 				break;
 			case 2:
+				if(fila.isEmpty()) {
+					System.out.println("A fila está vazia!");
+				}else {
 				System.out.println("Lista de clientes: ");
-				System.out.println(fila);
+				System.out.println(fila);}
 				break;
 			case 3:
 				System.out.println("O Cliente foi Chamado!");

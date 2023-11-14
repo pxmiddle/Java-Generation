@@ -16,7 +16,7 @@ public class Exercicio6 {
 				"\n1-  Adicionar Livro na pilha.\n2- Listar todos os livros\n3- Retirar livro da pilha\n0- Sair");
 		System.out.println("\n*******************");
 
-		while (opcao !=0) {
+		while (opcao != 0) {
 			System.out.println("Entre com a opção desejada: ");
 			opcao = sc.nextInt();
 			sc.nextLine();
@@ -28,11 +28,15 @@ public class Exercicio6 {
 				livros.push(nome);
 				break;
 			case 2:
-				System.out.println("Lista de clientes: ");
-				System.out.println(livros);
+				if (livros.isEmpty()) {
+					System.out.println("A Pilha está vazia!");
+				} else {
+					System.out.println("Lista de Livros na Pilha: ");
+					System.out.println(livros);
+				}
 				break;
 			case 3:
-				System.out.println("O Cliente foi Chamado!");
+				System.out.println("Um Livro foi retirado da pilha!");
 				livros.pop();
 				break;
 			case 0:
