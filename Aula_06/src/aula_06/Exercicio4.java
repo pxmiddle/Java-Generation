@@ -23,7 +23,7 @@ public class Exercicio4 {
 		
 		System.out.println("Digite o número que você deseja encontrar: ");
 		busca = sc.nextInt();			
-			if(valores.contains(busca) == true) {
+			if(valores.contains(busca)) {
 				System.out.printf("O número %d foi encontrado!", busca);
 		}
 			else {

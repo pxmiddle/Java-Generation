@@ -23,7 +23,7 @@ public class Exercicio2 {
 		System.out.println("Digite o número que você deseja encontrar: ");
 		numero = sc.nextInt();
 		
-		if(valores.contains(numero) == true) {
+		if(valores.contains(numero)) {
 			System.out.println("O número 7 está localizado na posição: " + valores.indexOf(numero));
 		}
 		else
