@@ -14,6 +14,16 @@ public class TestaFuncionario {
 		
 		funcionario1.visualizar();
 		
+		Gerente g1 = new Gerente(2, "Jose", "1975-03-14", "Gerente", 7777.00F, 20);
+		g1.visualizar();
+		g1.setSalario(9999.00F);
+		g1.setSubordinados(30);
+		g1.visualizar();
+		
+		
+		
+		Vendedor v1 = new Vendedor(3, "Marcia", "1990-04-07", "Vendedor", 2100.00F, false);
+		v1.visualizar();
 		
 	}
 
