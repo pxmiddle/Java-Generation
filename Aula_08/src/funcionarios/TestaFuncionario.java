@@ -24,6 +24,8 @@ public class TestaFuncionario {
 		
 		Vendedor v1 = new Vendedor(3, "Marcia", "1990-04-07", "Vendedor", 2100.00F, false);
 		v1.visualizar();
+		v1.setSalario(3000.00F);
+		v1.visualizar();
 		
 	}
 
